@@ -26,7 +26,7 @@ jobs:
 
       - name: Wizard Mac App (.app) Compile Karein
         run: |
-          pyinstaller --noconfirm --onedir --windowed --name "WizardOnMac" wizard_on_mac.py
+          pyinstaller --noconfirm --onedir --name "WizardOnMac" wizard_on_mac.py
           cd dist
           zip -r WizardOnMac-macOS.zip WizardOnMac.app
 
